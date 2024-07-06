@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --color--primario: #EEEEEE;
+    --color--secundario: #686D76;
+    --color--terciario: #373A40;
+    --color--hover: #DC5F00;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: var(--color--primario);
+    color: var(--color--secundario);
+}
+
+.Encabezado {
+    padding: 0.5rem 5%;
+    gap: 40px;
+   
+
+}
+.Encabezado img {
+    max-width: 70px; /* Ajusta el tamaño máximo del logo */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    
+}
+
+.presentacion {
+    padding: 2% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+
+.Presentacion__contenido {
+    width: 100%;
+    max-width: 600px;
+}
+
+.Presentacion__contenido__texto {
+    width: 100%;
+    max-width: 450px;
+    padding: 1rem;
+    background-color: white;
+    text-align: center;
+    
+}
+
+.output-section {
+    padding: 1rem;
+    text-align: center;
+}
+
+.Presentacion__botones {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.Texto_norma {
+    font-size: 0.875rem;
+    padding: 2%;
+}
+
+.Botones_personalizacion {
+    width: 100%;
+    max-width: 200px;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: var(--color--primario);
+    color: black;
+    border: 2px solid var(--color--hover);
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+.Botones_personalizacion:hover {
+    background-color: var(--color--hover);
+}
+
+.text_area, .text_muestra {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    border: 2px solid var(--color--hover);
+    border-radius: 5px;
+    resize: none;
+}
+.footer{
+    background-color: var(--color--secundario);
+    text-align: center;
+    color: var(--color--primario);
+    font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 768px) {
+    .presentacion {
+        gap: 40px;
+    }
+
+}
